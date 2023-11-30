@@ -1,11 +1,10 @@
 # Log Ingestor and Query Interface
 
 ## Overview
-This project is a Log Ingestor and Query Interface built using Java, Spring Boot, and MySQL. It allows efficient handling of log data and provides a query interface(CLI) for querying logs based on various filters
+This project is a Log Ingestor and Query Interface built using Java, Spring Boot, and MySQL. It allows efficient handling of log data and provides a query interface (CLI) for querying logs based on various filters
 
 ## Features
-- Mechanism to ingest logs in a specific format.
-- Different options to retrieve data.
+- A mechanism to ingest logs in a specific format and implement different options to retrieve data.
 
 ## Filters based on:
 - level
@@ -16,16 +15,16 @@ This project is a Log Ingestor and Query Interface built using Java, Spring Boot
 - commit
 - metadata.parentResourceId
 
-## Project Setup
-- Prerequisites
+
+ ### Project Setup
+ - Prerequisites
   - Java Development Kit (JDK)
   - Spring Tool Suite (STS) or any Java IDE
   - MySQL Database
 
- ### Setup
-- Clone the repository
-- Open the project in your preferred Java IDE (e.g., Spring Tool Suite).
-- Set up your MySQL database and update the database configuration in application.properties:
+- To Clone the repository
+- Open the project in your preferred Java IDE.
+- Set up your MySQL database and update the database configuration :
 ```
 #db specific properties
 spring.datasource.url=jdbc:mysql://localhost:3306/database_name
@@ -53,8 +52,4 @@ GET /logs/spanId/{spanId}: Retrieves logs by spanId.
 GET /logs/commit/{commit}: Retrieves logs by commit.
 GET /logs/metadata/parentResourceId/{parentResourceId}: Retrieves logs by metadata.parentResourceId.
 ```
-## Identified Issues
-- Validation is not added
-- Exception Handling is not added
-- It is not optimized for large datasets
 
