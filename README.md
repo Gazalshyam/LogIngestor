@@ -16,7 +16,7 @@ This project is a Log Ingestor and Query Interface built using Java, Spring Boot
 - metadata.parentResourceId
 
 
- ### Project Setup
+ ## Project Setup:
  - Prerequisites
   - Java Development Kit (JDK)
   - Spring Tool Suite (STS) or any Java IDE
